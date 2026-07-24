@@ -1,0 +1,64 @@
+openapi: 3.0.3
+info:
+  title: Complaint Management Demo API
+  version: 0.1.0
+paths:
+  /complaints/{complaintId}:
+    get:
+      summary: Get a complaint
+      parameters:
+        - name: complaintId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Complaint found
+        "404":
+          description: Complaint not found
+  /complaints/{complaintId}/reopen:
+    post:
+      summary: Reopen a closed unresolved complaint
+      parameters:
+        - name: complaintId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: X-User-Id
+          in: header
+          required: true
+          schema:
+            type: string
+        - name: X-Demo-Now
+          in: header
+          required: false
+          description: Demo-only timestamp override for repeatable tests.
+          schema:
+            type: string
+            format: date-time
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - reason
+              properties:
+                reason:
+                  type: string
+                  minLength: 1
+      responses:
+        "200":
+          description: Complaint reopened
+        "400":
+          description: Reopening reason is missing
+        "403":
+          description: Current user is not the complaint creator
+        "404":
+          description: Complaint not found
+        "409":
+          description: Complaint is not eligible for reopening
+
