@@ -1,9 +1,14 @@
-# AI Usage in Software Engineering Project: Session Preparation
+# AI Usage in IITM Software Engineering Project: Session Preparation
+
+Recommended topic:
+
+**AI-Augmented Software Engineering for the IITM Project: From User Research to Tested APIs and Final Review**
 
 ## 1. Session Setup
 
 - Decide session length: 90 minutes preferred, 60 minutes if time is limited.
 - Keep the teaching guide open: `AI_Augmented_Software_Engineering_Teaching_Guide.docx`.
+- Keep the project document open: `IITM Software Engineering Course - May 2026.md`.
 - Prepare screen sharing in advance and make sure font size is readable.
 - Keep one AI assistant ready, such as Codex, Claude Code, GitHub Copilot, Aider, Continue, or browser chat.
 - Prepare a disposable Git branch for all live edits.
@@ -23,6 +28,7 @@ Prepare a small demo repository before the session. It should contain:
 - One OpenAPI file.
 - One README.
 - A simple domain such as complaint management.
+- At least two user roles, matching the course requirement.
 - A clean Git history or at least one clean starting commit.
 - A disposable branch for the live demo.
 
@@ -69,6 +75,11 @@ Keep these prompt categories ready for copy-paste:
 - Staged diff commit reviewer.
 - PR writer.
 - Code-review subagent.
+- Milestone 1 reviewer.
+- Milestone 2 design reviewer.
+- Sprint API YAML reviewer.
+- Course test-case formatter.
+- Final submission reviewer.
 
 ## 5. Teaching Flow
 
@@ -88,6 +99,13 @@ Use this workflow as the main structure:
 8. Review
 9. User feedback
 
+Map the workflow to the course milestones:
+
+1. Milestone 1: evidence, users, pain points, SMART user stories.
+2. Milestone 2: schedule, components, class diagram, database design, frontend pages, scrum minutes.
+3. Sprint 1 and Sprint 2: Swagger-compatible YAML, API code, formatted test cases, pytest output, user feedback.
+4. Final submission: working code, README, report, tools, issue tracking, code review, presentation, demo video.
+
 ## 6. Live Demo Checklist
 
 Before starting the session, verify that you can:
@@ -104,6 +122,8 @@ Before starting the session, verify that you can:
 - Show a staged diff.
 - Create a clear commit message.
 - Draft a PR description.
+- Show how the API maps back to a user story.
+- Show the required sprint test-case format: API, input, expected output, actual output, result.
 
 ## 7. Student Activities to Prepare
 

@@ -20,6 +20,7 @@ paths:
   /complaints/{complaintId}/reopen:
     post:
       summary: Reopen a closed unresolved complaint
+      description: Implements user story US-CIVIC-REOPEN-001 for the Civic Services Platform complaint-management workflow.
       parameters:
         - name: complaintId
           in: path
@@ -61,4 +62,3 @@ paths:
           description: Complaint not found
         "409":
           description: Complaint is not eligible for reopening
-

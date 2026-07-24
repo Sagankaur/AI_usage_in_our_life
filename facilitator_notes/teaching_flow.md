@@ -1,5 +1,9 @@
 # Teaching Flow
 
+Recommended topic:
+
+**AI-Augmented Software Engineering for the IITM Project: From User Research to Tested APIs and Final Review**
+
 Core message:
 
 > AI should strengthen the software-engineering process, not replace it. Students remain responsible for requirements, architecture, tests, security, Git history, and every submitted line of code.
@@ -9,13 +13,12 @@ Core message:
 | Time | Section | Outcome |
 | --- | --- | --- |
 | 0-8 min | What AI is and is not | Students understand that AI should produce one verifiable artifact at a time. |
-| 8-20 min | Requirements and user stories | Students analyse evidence and improve weak stories. |
-| 20-32 min | Architecture and design | Students use AI to compare options, not decide blindly. |
-| 32-42 min | UI consistency | Students define task-focused UI contracts. |
-| 42-57 min | API contract and testing | Students write contracts and tests before implementation. |
-| 57-72 min | Agents, skills, hooks | Students understand customization layers. |
-| 72-84 min | Git and code review | Students move from issue to PR with review. |
-| 84-90 min | Cost routing and policy | Students learn responsible and affordable use. |
+| 8-22 min | Milestone 1: requirements | Students analyse real evidence and improve SMART user stories. |
+| 22-36 min | Milestone 2: design and schedule | Students use AI to review components, class diagrams, database design, scrum minutes, and frontend flow. |
+| 36-58 min | Sprint 1/2: APIs and tests | Students write Swagger-compatible YAML and course-format test cases before implementation. |
+| 58-72 min | Implementation and review | Students compare user story, YAML, tests, and code. |
+| 72-82 min | Git, issues, and code review | Students prepare evidence for final submission. |
+| 82-90 min | Final submission and policy | Students learn responsible AI use and final readiness checks. |
 
 ## 60-minute flow
 
@@ -39,4 +42,3 @@ Core message:
 7. Implementation
 8. Review
 9. User feedback
-

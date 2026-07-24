@@ -6,6 +6,18 @@ Use this for ambiguity review, API design, test design, and implementation.
 
 As a resident, I want to reopen my closed complaint within seven days so that unresolved issues can be reviewed again.
 
+Story ID: `US-CIVIC-REOPEN-001`
+
+Course option: Civic Services Platform
+
+Subdomain: Complaint management
+
+User roles:
+
+- Primary user: resident
+- Secondary user: association manager
+- Tertiary user: maintenance supervisor
+
 ## Acceptance criteria
 
 - Only the complaint creator can reopen the complaint.
@@ -19,3 +31,8 @@ As a resident, I want to reopen my closed complaint within seven days so that un
 - An unauthorised resident receives `403`.
 - An ineligible complaint receives `409`.
 
+## Sprint API mapping
+
+- API: `POST /complaints/{complaintId}/reopen`
+- YAML: `sample_repo/openapi.yaml`
+- pytest file: `sample_repo/tests/test_complaints.py`
